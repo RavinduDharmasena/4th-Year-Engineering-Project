@@ -1,0 +1,16 @@
+.point-div {
+    background-color: #28a745;
+    padding: 0.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    border-radius: 1rem;
+    margin: auto;
+
+    &-text {
+        position: absolute;
+        top: 9%;
+        left: 35%;
+        color: white;
+    }
+}

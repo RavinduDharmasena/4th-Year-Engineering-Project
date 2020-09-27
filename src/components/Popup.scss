@@ -1,0 +1,110 @@
+.popup {
+    &-background {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 5;
+
+        &-fadeUp {
+            // display: block;
+            animation: fadeUpBackground .5s linear;
+            opacity: .5;
+        }
+
+        &-fadeDown {
+            // display: none;
+            animation: fadeDownbackground .5s linear;
+            opacity: 0;
+        }
+    }
+
+    &-box {
+        background-color: white;
+        min-width: 30rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-radius: .2rem;
+        border: 0.15rem solid black;
+        opacity: 0;
+        // display: none;
+        // z-index: 10;
+        box-shadow: 0 0 0 5000px rgba(0,0,0,0.5);
+        &-fadeUp {
+            // display: block;
+            animation: fadeUp .5s linear;
+            opacity: 1;
+        }
+
+        &-fadeDown {
+            // display: none;
+            animation: fadeDown .5s linear;
+            opacity: 0;
+        }
+    }
+
+    &-header {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        border-bottom: 0.1rem solid grey;
+        font-weight: 500;
+    }
+
+    &-body {
+        padding: 0.6rem;
+        border-bottom: 0.1rem solid grey;
+    }
+
+    &-footer {
+        padding: 0.6rem;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        top: 30%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 20%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        top: 20%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDownBackground {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUpBackground {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

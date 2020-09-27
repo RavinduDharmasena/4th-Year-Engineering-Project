@@ -1,0 +1,35 @@
+.route-viewer {
+    background-color: white;
+    width: 30vw;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    margin-top:.5rem;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+
+    &-point {
+        background-color: green;
+        display: inline-block;
+        padding: 0.8rem 1.2rem;
+        border-radius: 1rem;
+        margin-top: .5rem;
+        &-text {
+            font-weight: 550;
+        }
+
+        &:not(:last-child) {
+            margin-right: .2rem;
+        }
+    }
+
+    &-icon {
+        font-weight: 500;
+    }
+
+    &-arrow {
+        margin: 0rem .2rem;
+    }
+}
